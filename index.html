@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Əliyevlər Hüquq Bürosu | Bakı</title>
+  <meta name="description" content="Əliyevlər Hüquq Bürosu — Azərbaycanda korporativ, mülki və cinayət hüququ sahəsində 20 illik təcrübə. Peşəkar hüquqi müdafiə.">
+  <meta property="og:title" content="Əliyevlər Hüquq Bürosu">
+  <meta property="og:description" content="Azərbaycanda aparıcı hüquq bürosu. Hüquqi problemlərinizə peşəkar həll.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231a1a2e'/><text y='24' x='4' font-size='22' fill='%23c9a84c'>⚖</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f0f1a;
+      --navy-mid: #1a1a2e;
+      --navy-light: #252540;
+      --gold: #c9a84c;
+      --gold-light: #e8c87a;
+      --gold-dim: rgba(201,168,76,0.15);
+      --cream: #f5f0e8;
+      --cream-dark: #ede7d8;
+      --text: #1c1c2e;
+      --text-muted: #6b6880;
+      --white: #ffffff;
+
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 48px;
+      --space-2xl: 80px;
+      --space-3xl: 120px;
+
+      --shadow-color: 15, 15, 26;
+      --shadow-gold: 201, 168, 76;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* NOISE TEXTURE */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    p { line-height: 1.75; }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--cream-dark); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+    /* ===================== NAVIGATION ===================== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 0 var(--space-xl);
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    nav.scrolled {
+      background: rgba(15, 15, 26, 0.97);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 1px 0 rgba(201,168,76,0.2);
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      text-decoration: none;
+    }
+
+    .nav-logo-main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-logo-sub {
+      font-size: 9px;
+      color: var(--gold);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: var(--space-xl);
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold) !important;
+      padding: 8px 20px;
+      border-radius: 2px;
+      font-size: 12px !important;
+      letter-spacing: 0.1em !important;
+      transition: background 0.25s ease, color 0.25s ease !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold) !important;
+      color: var(--navy) !important;
+    }
+
+    .nav-cta::after { display: none !important; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--white);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--navy);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xl);
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 400;
+      color: var(--cream);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+      transition: color 0.2s ease;
+    }
+
+    .mobile-menu a:hover { color: var(--gold); }
+
+    /* ===================== HERO ===================== */
+    #hero {
+      min-height: 100vh;
+      background: var(--navy);
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+
+    .hero-bg-radial {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 80% at 80% 50%, rgba(201,168,76,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(37,37,64,0.8) 0%, transparent 60%);
+    }
+
+    .hero-left {
+      position: relative;
+      z-index: 2;
+      padding: 120px var(--space-xl) var(--space-3xl) var(--space-2xl);
+      max-width: 620px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-eyebrow span {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-title {
+      font-size: clamp(52px, 7vw, 88px);
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: var(--space-lg);
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.9s ease 0.35s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: rgba(245,240,232,0.55);
+      line-height: 1.75;
+      max-width: 420px;
+      margin-bottom: var(--space-xl);
+      font-weight: 400;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.5s forwards;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.65s forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+      box-shadow:
+        0 2px 4px rgba(var(--shadow-gold),0.2),
+        0 8px 24px rgba(var(--shadow-gold),0.15);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow:
+        0 4px 8px rgba(var(--shadow-gold),0.25),
+        0 16px 32px rgba(var(--shadow-gold),0.2);
+    }
+
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(245,240,232,0.6);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 0.2s ease;
+    }
+
+    .btn-ghost:hover { color: var(--gold); }
+    .btn-ghost:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    .hero-right {
+      position: relative;
+      z-index: 2;
+      height: 100vh;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeIn 1.2s ease 0.8s forwards;
+    }
+
+    .hero-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(20%) contrast(1.05);
+    }
+
+    .hero-right::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, var(--navy) 0%, transparent 30%),
+        linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 50%);
+    }
+
+    .hero-stats {
+      position: absolute;
+      bottom: var(--space-2xl);
+      left: var(--space-2xl);
+      z-index: 3;
+      display: flex;
+      gap: var(--space-2xl);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+
+    .hero-stat-item { display: flex; flex-direction: column; gap: 4px; }
+
+    .hero-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 11px;
+      color: rgba(245,240,232,0.45);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      background: rgba(201,168,76,0.2);
+      align-self: stretch;
+    }
+
+    /* ===================== TRUST BAR ===================== */
+    #trust {
+      background: var(--navy-mid);
+      padding: var(--space-xl) var(--space-2xl);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+    }
+
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-xl);
+      flex-wrap: wrap;
+    }
+
+    .trust-label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.35);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .trust-divider {
+      width: 1px;
+      height: 32px;
+      background: rgba(201,168,76,0.2);
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(245,240,232,0.5);
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .trust-item svg { color: var(--gold); flex-shrink: 0; }
+
+    /* ===================== SERVICES ===================== */
+    #xidmetler {
+      padding: var(--space-3xl) var(--space-2xl);
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #xidmetler::before {
+      content: 'HÜQUQİ';
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 180px;
+      font-weight: 700;
+      color: rgba(15,15,26,0.04);
+      letter-spacing: -0.05em;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: end;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      font-size: clamp(38px, 5vw, 64px);
+      color: var(--navy);
+      font-weight: 400;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      max-width: 420px;
+      align-self: end;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(15,15,26,0.08);
+      border: 1px solid rgba(15,15,26,0.08);
+    }
+
+    .service-card {
+      background: var(--cream);
+      padding: var(--space-xl) var(--space-lg);
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      cursor: default;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 0;
+      background: var(--gold);
+      transition: height 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .service-card:hover {
+      background: var(--cream-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(var(--shadow-color),0.06), 0 16px 32px rgba(var(--shadow-color),0.08);
+    }
+    .service-card:hover::before { height: 100%; }
+
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: var(--space-lg);
+      color: var(--gold);
+    }
+
+    .service-num {
+      position: absolute;
+      top: var(--space-lg);
+      right: var(--space-lg);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(15,15,26,0.06);
+      line-height: 1;
+    }
+
+    .service-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: var(--space-sm);
+      letter-spacing: -0.01em;
+    }
+
+    .service-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ===================== ABOUT ===================== */
+    #haqqimizda {
+      background: var(--navy);
+      padding: var(--space-3xl) var(--space-2xl);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+    }
+
+    .about-img-wrap {
+      position: relative;
+    }
+
+    .about-img-wrap img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      filter: grayscale(15%) contrast(1.05);
+    }
+
+    .about-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom right, transparent 60%, rgba(201,168,76,0.12));
+    }
+
+    .about-img-accent {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 160px;
+      height: 160px;
+      border: 1px solid rgba(201,168,76,0.3);
+      z-index: -1;
+    }
+
+    .about-content { color: var(--cream); }
+
+    .about-content .section-title { color: var(--cream); }
+
+    .about-text {
+      font-size: 15px;
+      color: rgba(245,240,232,0.6);
+      line-height: 1.8;
+      margin-top: var(--space-xl);
+      margin-bottom: var(--space-xl);
+    }
+
+    .about-steps {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .about-step {
+      display: flex;
+      gap: var(--space-md);
+      align-items: flex-start;
+    }
+
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(201,168,76,0.4);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .step-content { }
+    .step-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+    .step-desc {
+      font-size: 13px;
+      color: rgba(245,240,232,0.5);
+      line-height: 1.6;
+    }
+
+    /* ===================== TEAM ===================== */
+    #komanda {
+      padding: var(--space-3xl) var(--space-2xl);
+      background: var(--cream);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: var(--space-lg);
+      margin-top: var(--space-2xl);
+    }
+
+    .team-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-img-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      margin-bottom: var(--space-md);
+    }
+
+    .team-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      filter: grayscale(20%);
+    }
+
+    .team-card:hover .team-img-wrap img { transform: scale(1.04); }
+
+    .team-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15,15,26,0.6) 0%, transparent 50%);
+    }
+
+    .team-info { padding: 0 4px; }
+
+    .team-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .team-role {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .team-area {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    /* ===================== TESTIMONIALS ===================== */
+    #reyler {
+      background: var(--navy-mid);
+      padding: var(--space-3xl) var(--space-2xl);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #reyler::before {
+      content: '"';
+      position: absolute;
+      top: -40px;
+      left: 60px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 400px;
+      color: rgba(201,168,76,0.04);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+      margin-top: var(--space-2xl);
+    }
+
+    .testimonial-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.12);
+      padding: var(--space-xl);
+      position: relative;
+      transition: border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(201,168,76,0.3);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: var(--space-md);
+    }
+
+    .testimonial-stars svg { color: var(--gold); }
+
+    .testimonial-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(245,240,232,0.8);
+      line-height: 1.6;
+      margin-bottom: var(--space-xl);
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .testimonial-author img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      border: 1px solid rgba(201,168,76,0.3);
+    }
+
+    .testimonial-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .testimonial-company {
+      font-size: 12px;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+
+    /* ===================== FAQ ===================== */
+    #faq {
+      padding: var(--space-3xl) var(--space-2xl);
+      background: var(--cream);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: start;
+      margin-top: var(--space-2xl);
+    }
+
+    .faq-list { display: flex; flex-direction: column; gap: 1px; }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(15,15,26,0.1);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: var(--space-lg) 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      cursor: pointer;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+      transition: color 0.2s ease;
+    }
+
+    .faq-q:hover { color: var(--gold); }
+    .faq-q:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+    .faq-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .faq-icon::before, .faq-icon::after {
+      content: '';
+      position: absolute;
+      background: currentColor;
+      border-radius: 1px;
+    }
+
+    .faq-icon::before { width: 14px; height: 1.5px; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .faq-icon::after { width: 1.5px; height: 14px; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: transform 0.3s ease, opacity 0.3s ease; }
+
+    .faq-item.open .faq-icon::after { transform: translate(-50%, -50%) rotate(90deg); opacity: 0; }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+
+    .faq-a-inner {
+      padding-bottom: var(--space-lg);
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    .faq-item.open .faq-a { max-height: 300px; }
+
+    .faq-contact {
+      background: var(--navy);
+      padding: var(--space-xl);
+      position: sticky;
+      top: 100px;
+    }
+
+    .faq-contact-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      color: var(--cream);
+      font-weight: 500;
+      margin-bottom: var(--space-md);
+      line-height: 1.2;
+    }
+
+    .faq-contact-text {
+      font-size: 13px;
+      color: rgba(245,240,232,0.5);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+
+    .faq-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+
+    .faq-contact-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      font-size: 13px;
+      color: rgba(245,240,232,0.6);
+    }
+
+    .faq-contact-row svg { color: var(--gold); flex-shrink: 0; }
+
+    /* ===================== CTA ===================== */
+    #cta {
+      background: var(--navy);
+      padding: var(--space-3xl) var(--space-2xl);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    #cta::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 70%);
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-title {
+      font-size: clamp(42px, 6vw, 80px);
+      color: var(--cream);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: var(--space-lg);
+    }
+
+    .cta-title em { color: var(--gold); }
+
+    .cta-sub {
+      font-size: 16px;
+      color: rgba(245,240,232,0.5);
+      margin-bottom: var(--space-xl);
+      line-height: 1.7;
+    }
+
+    .cta-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    /* ===================== FOOTER ===================== */
+    footer {
+      background: #08080f;
+      padding: var(--space-2xl) var(--space-2xl) var(--space-xl);
+      border-top: 1px solid rgba(201,168,76,0.1);
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-2xl);
+      padding-bottom: var(--space-2xl);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      margin-bottom: var(--space-xl);
+    }
+
+    .footer-brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+
+    .footer-brand-sub {
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+
+    .footer-brand-desc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.7;
+      max-width: 280px;
+      margin-bottom: var(--space-lg);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: var(--space-sm);
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.4);
+      transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+      text-decoration: none;
+    }
+
+    .footer-social a:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(201,168,76,0.08);
+    }
+
+    .footer-social a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+    .footer-col-title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: var(--space-lg);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover { color: var(--cream); }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+    }
+
+    .footer-legal {
+      display: flex;
+      gap: var(--space-xl);
+    }
+
+    .footer-legal a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-legal a:hover { color: rgba(255,255,255,0.5); }
+
+    /* ===================== ACCESSIBILITY — focus-visible ===================== */
+    .nav-logo:focus-visible,
+    .nav-links a:focus-visible,
+    .nav-cta:focus-visible,
+    .hamburger:focus-visible,
+    .mobile-menu a:focus-visible,
+    .footer-links a:focus-visible,
+    .footer-legal a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    /* ===================== ENHANCED HOVER STATES ===================== */
+    .testimonial-card {
+      transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(201,168,76,0.3);
+      background: rgba(255,255,255,0.06);
+      transform: translateY(-4px);
+    }
+
+    /* ===================== ANIMATIONS ===================== */
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 1024px) {
+      nav { padding: 0 var(--space-lg); }
+      .nav-links { gap: var(--space-lg); }
+      #hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-left { max-width: 100%; padding: 120px var(--space-lg) 160px; }
+      .hero-stats { left: var(--space-lg); bottom: var(--space-xl); }
+      .section-header { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img-wrap { max-height: 360px; overflow: hidden; }
+      .about-img-wrap img { height: 360px; }
+      .about-img-accent { display: none; }
+      .team-grid { grid-template-columns: repeat(3, 1fr) !important; }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .faq-grid { grid-template-columns: 1fr; }
+      .faq-contact { position: static; }
+      .footer-top { grid-template-columns: 1fr 1fr; gap: var(--space-xl); }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --space-xl: 28px;
+        --space-2xl: 48px;
+        --space-3xl: 72px;
+      }
+
+      nav { padding: 0 var(--space-md); height: 64px; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      /* Hero — flex sütun, stats axında görünür */
+      #hero {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        min-height: 100svh;
+      }
+      .hero-left { padding: 90px var(--space-md) var(--space-lg); flex: 1; }
+      .hero-stats {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        padding: var(--space-lg) var(--space-md) var(--space-xl);
+        flex-wrap: wrap;
+        gap: var(--space-lg);
+        animation: none;
+        opacity: 1;
+      }
+      .hero-stat-divider { display: none; }
+      .hero-actions { flex-wrap: wrap; gap: var(--space-md); }
+
+      /* Trust */
+      #trust { padding-left: var(--space-md); padding-right: var(--space-md); }
+      .trust-inner { justify-content: flex-start; gap: 12px; flex-wrap: wrap; }
+      .trust-divider { display: none; }
+      .trust-label { width: 100%; margin-bottom: 4px; }
+
+      /* Dekorativ böyük mətnlər gizlənir */
+      #xidmetler::before,
+      #reyler::before { display: none; }
+
+      /* Sections */
+      #xidmetler, #haqqimizda, #komanda, #reyler, #faq, #cta, footer {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+      }
+      .section-header { grid-template-columns: 1fr; gap: var(--space-md); }
+      .section-desc { max-width: 100%; }
+      .services-grid { grid-template-columns: 1fr; }
+
+      /* About */
+      .about-img-accent { display: none; }
+
+      /* Team */
+      .team-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      /* Testimonials */
+      .testimonials-grid { grid-template-columns: 1fr; }
+
+      /* FAQ */
+      .faq-contact { position: static; margin-top: var(--space-xl); }
+
+      /* Footer */
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .footer-legal { flex-wrap: wrap; gap: var(--space-md); }
+    }
+
+    @media (max-width: 480px) {
+      :root {
+        --space-xl: 20px;
+        --space-2xl: 36px;
+        --space-3xl: 56px;
+      }
+
+      nav { height: 60px; }
+      .nav-logo-main { font-size: 16px; }
+
+      .hero-title { font-size: clamp(36px, 9vw, 52px); }
+      .hero-subtitle { font-size: 14px; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .btn-primary { justify-content: center; width: 100%; }
+      .hero-stat-num { font-size: 28px; }
+
+      .section-title { font-size: clamp(30px, 8vw, 48px); }
+
+      .team-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+      .testimonial-text { font-size: 16px; }
+
+      .cta-actions { flex-direction: column; align-items: stretch; }
+      .cta-actions .btn-primary,
+      .cta-actions .btn-ghost { width: 100%; justify-content: center; }
+
+      .footer-legal { flex-direction: column; gap: var(--space-sm); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <span class="nav-logo-main">Əliyevlər</span>
+      <span class="nav-logo-sub">Hüquq Bürosu · Bakı</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#xidmetler">Xidmətlər</a></li>
+      <li><a href="#haqqimizda">Haqqımızda</a></li>
+      <li><a href="#komanda">Komanda</a></li>
+      <li><a href="#reyler">Rəylər</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta" class="nav-cta">Məsləhət Al</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menyu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#xidmetler" onclick="closeMobileMenu()">Xidmətlər</a>
+    <a href="#haqqimizda" onclick="closeMobileMenu()">Haqqımızda</a>
+    <a href="#komanda" onclick="closeMobileMenu()">Komanda</a>
+    <a href="#reyler" onclick="closeMobileMenu()">Rəylər</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="#cta" class="nav-cta" onclick="closeMobileMenu()" style="border:1px solid var(--gold);color:var(--gold);padding:12px 28px;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;">Məsləhət Al</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-radial"></div>
+
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span>Bakıda №1 Hüquq Bürosu</span>
+      </div>
+      <h1 class="hero-title">
+        Hüquqi<br>
+        <em>Müdafiəniz</em><br>
+        Əlimizdədir
+      </h1>
+      <p class="hero-subtitle">
+        20 ildən artıq təcrübə ilə korporativ, mülki və cinayət hüququ sahəsində Azərbaycanın aparıcı hüquq bürosu. Hər vəziyyətdə yanınızdayıq.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">
+          Pulsuz Məsləhət Al
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#haqqimizda" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          Daha Ətraflı
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <img
+        src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=800&q=80"
+        alt="Hüquq ofisi mühiti"
+        loading="eager"
+      >
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">20+</span>
+        <span class="hero-stat-label">İl Təcrübə</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">1400+</span>
+        <span class="hero-stat-label">Uğurlu İş</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">98%</span>
+        <span class="hero-stat-label">Müştəri Məmnuniyyəti</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div id="trust">
+    <div class="trust-inner">
+      <span class="trust-label">Əməkdaşlıq etdiklərimiz</span>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Azərenerji ASC
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        SOCAR
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Kapital Bank
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Azərsu
+      </div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        ABB Bank
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="xidmetler">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-eyebrow">Hüquqi Xidmətlər</div>
+          <h2 class="section-title">Hər <em>sahədə</em><br>güclü müdafiə</h2>
+        </div>
+        <p class="section-desc">Mürəkkəb hüquqi məsələlərdən sadə müqavilə işlərinə qədər — peşəkar komandamız hər addımda sizinlədir.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <span class="service-num">01</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <h3 class="service-title">Korporativ Hüquq</h3>
+          <p class="service-desc">Şirkət quruluşu, birləşmə-satınalmalar, korporativ idarəetmə və kommersiya müqavilələri üzrə kompleks hüquqi dəstək.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <span class="service-num">02</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/><path d="m17 3-5 18"/><path d="m7 3 5 18"/></svg>
+          <h3 class="service-title">Mülki Mübahisələr</h3>
+          <p class="service-desc">Əmlak, miras, borc ödənişi və digər mülki hüquq sahəsindəki mübahisələrinizdə məhkəmə təmsili.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <span class="service-num">03</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <h3 class="service-title">Əmlak Hüququ</h3>
+          <p class="service-desc">Daşınmaz əmlak alqı-satqısı, icarə müqavilələri, tikinti layihələri və torpaq hüququ məsələlərində tam dəstək.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <span class="service-num">04</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <h3 class="service-title">Cinayət Müdafiəsi</h3>
+          <p class="service-desc">İstintaq mərhələsindən məhkəməyə qədər — güclü müdafiə strategiyası ilə hüquqlarınızı qoruyuruq.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-4">
+          <span class="service-num">05</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <h3 class="service-title">Beynəlxalq Hüquq</h3>
+          <p class="service-desc">Xarici investisiyalar, beynəlxalq ticarət müqavilələri və transsərhəd mübahisələr üzrə ixtisaslaşmış dəstək.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-5">
+          <span class="service-num">06</span>
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <h3 class="service-title">Əmək Hüququ</h3>
+          <p class="service-desc">İşçi-işəgötürən münasibətlərindəki mübahisələr, əmək müqavilələri və işdən çıxarılma hallarında hüquqi yardım.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="haqqimizda">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img
+          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
+          alt="Hüquq bürosunun ofisi"
+          loading="lazy"
+        >
+        <div class="about-img-accent"></div>
+      </div>
+
+      <div class="about-content reveal reveal-delay-2">
+        <div class="section-eyebrow">Haqqımızda</div>
+        <h2 class="section-title">Ədalət — <em>prinsipdən</em><br>daha çox bir şeydir</h2>
+        <p class="about-text">
+          1994-cü ildən Bakıda fəaliyyət göstərən büromuz, Azərbaycanda hüquqi xidmətlər sahəsinin ən etibarlı adlarından biridir. Hər müştəriyə fərdi yanaşma, şəffaf ünsiyyət və qazanmaq üçün yanıb-tutuşan bir komanda — biz budur.
+        </p>
+
+        <div class="about-steps">
+          <div class="about-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <div class="step-title">İlkin Məsləhət</div>
+              <div class="step-desc">Probleminizi eşidirik, vəziyyəti analiz edirik və ilk 30 dəqiqəlik məsləhəti pulsuz təqdim edirik.</div>
+            </div>
+          </div>
+          <div class="about-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <div class="step-title">Strategiya Hazırlığı</div>
+              <div class="step-desc">İşinizin spesifikliyinə uyğun olaraq ən güclü hüquqi strategiyanı hazırlayıb sizinlə razılaşdırırıq.</div>
+            </div>
+          </div>
+          <div class="about-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <div class="step-title">Aktiv Müdafiə</div>
+              <div class="step-desc">Məhkəmədə, danışıqlarda və hər mərhələdə hüquqlarınızı maksimum səviyyədə müdafiə edirik.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="komanda">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-eyebrow">Komandamız</div>
+          <h2 class="section-title">Sizi <em>ən yaxşılar</em><br>təmsil edir</h2>
+        </div>
+        <p class="section-desc">Hər bir vəkilimiz öz sahəsinin tanınmış mütəxəssisi, onlarla il məhkəmə təcrübəsinə malik peşəkardır.</p>
+      </div>
+
+      <div class="team-grid" style="grid-template-columns: repeat(5, 1fr);">
+        <div class="team-card reveal">
+          <div class="team-img-wrap">
+            <img
+              src="images/nermin.png"
+              alt="Nərmin Əliyeva — Baş ortaq vəkil, Sahibi"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <div class="team-name">Nərmin Əliyeva</div>
+            <div class="team-role">Baş Ortaq Vəkil · Sahibi</div>
+            <div class="team-area">Korporativ & Mülki Hüquq</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-img-wrap">
+            <img
+              src="images/vusal.png"
+              alt="Vüsal Əliyev — Baş ortaq"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <div class="team-name">Vüsal Əliyev</div>
+            <div class="team-role">Baş Ortaq</div>
+            <div class="team-area">Beynəlxalq & Korporativ Hüquq</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-img-wrap">
+            <img
+              src="images/vasif.png"
+              alt="Vasif Əliyev — İnvestor ortaq"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <div class="team-name">Vasif Əliyev</div>
+            <div class="team-role">İnvestor Ortaq</div>
+            <div class="team-area">Əmlak & Maliyyə Hüququ</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-img-wrap">
+            <img
+              src="images/emil.jpg"
+              alt="Emil Əliyev — Baş vəkil"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <div class="team-name">Emil Əliyev</div>
+            <div class="team-role">Baş Vəkil</div>
+            <div class="team-area">Cinayət Müdafiəsi</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-img-wrap">
+            <img
+              src="images/alisa.jpg"
+              alt="Alisa Əliyeva — Vəkil"
+              loading="lazy"
+            >
+          </div>
+          <div class="team-info">
+            <div class="team-name">Alisa Əliyeva</div>
+            <div class="team-role">Vəkil</div>
+            <div class="team-area">Əmək & Ailə Hüququ</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="reyler">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-eyebrow" style="color:var(--gold-light)">Müştəri Rəyləri</div>
+          <h2 class="section-title" style="color:var(--cream)">Müştərilərimiz <em>danışır</em></h2>
+        </div>
+        <p class="section-desc" style="color:rgba(245,240,232,0.5)">Nəticələrimizi bizim yerimizə müştərilərimiz ifadə edir.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Şirkətimizin mürəkkəb birləşmə prosesində Əliyevlər Hüquq Bürosu bizi mükəmməl şəkildə təmsil etdi. Peşəkarlıqları sayəsində bütün prosesi qanuni çərçivədə sürətlə tamamladıq."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Rauf Babayev">
+            <div>
+              <div class="testimonial-name">Rauf Babayev</div>
+              <div class="testimonial-company">İcraçı Direktor, BakuTech MMC</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Əmlak mübahisəmdə heç bir ümidim qalmamışdı. Nərmin xanım işimi üzərinə götürüb sonu uğurla nəticələndirdi. Həyatımı dəyişdirən qərar idi."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&q=80" alt="Günel Qasımova">
+            <div>
+              <div class="testimonial-name">Günel Qasımova</div>
+              <div class="testimonial-company">Şəxsi Müştəri, Bakı</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-text">"Beynəlxalq müqavilələrimizdə bir çox hüquq bürosu ilə işləmişik. Əliyevlər Hüquq Bürosu sürəti, dəqiqliyi və kommunikasiya keyfiyyəti ilə hamısından üstündür."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Kamran Nəcəfov">
+            <div>
+              <div class="testimonial-name">Kamran Nəcəfov</div>
+              <div class="testimonial-company">Maliyyə Direktoru, AzərGlobal Holdinq</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <div>
+          <div class="section-eyebrow">Suallar</div>
+          <h2 class="section-title">Tez-tez verilən<br><em>suallar</em></h2>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              İlkin məsləhət pulludu?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Xeyr. İlk məsləhət görüşümüz tamamilə pulsuzdur. Bu görüşdə vəziyyətinizi qiymətləndirib sizə ən münasib hüquqi yol xəritəsini təqdim edirik. Heç bir öhdəlik yoxdur.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Vəkillik haqqı necə hesablanır?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">İşin mürəkkəbliyinə, həcminə və müddətinə görə fərqli ödəniş modellərimiz var: sabit aylıq retainer, işin növünə görə müqavilə haqqı və ya saat əsaslı ödəniş. Bütün şərtlər əvvəlcədən şəffaf şəkildə razılaşdırılır.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Nə qədər tez cavab alacam?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">İş günlərində 4 saat ərzində, həftə sonları isə 24 saat ərzində sizinlə əlaqə saxlayırıq. Təcili hallarda isə 7/24 xidmət göstəririk.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Ölkə xaricindən müştərilər ilə işləyirsiniz?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Bəli. Beynəlxalq müştərilərimizlə ingilis, rus və türk dillərində işləyirik. Video görüşlər, elektron imza və rəqəmsal sənəd mübadiləsi ilə tam uzaqdan xidmət göstərə bilirik.</div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)">
+              Sirriliyi necə qoruyursunuz?
+              <span class="faq-icon"></span>
+            </button>
+            <div class="faq-a"><div class="faq-a-inner">Vəkil-müştəri məxfiliyinə tam riayət edirik. Bütün məlumatlar şifrəli sistemlərdə saxlanılır. İzinsiz heç bir üçüncü şəxslə məlumat paylaşılmır.</div></div>
+          </div>
+        </div>
+
+        <div class="faq-contact reveal reveal-delay-2">
+          <div class="faq-contact-title">Sualınız cavabsız qaldı?</div>
+          <p class="faq-contact-text">Bizimlə birbaşa əlaqə saxlayın. Komandamız ən qısa zamanda sizə cavab verəcək.</p>
+          <div class="faq-contact-info">
+            <div class="faq-contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 6 6l.75-.75a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +994 12 498 55 00
+            </div>
+            <div class="faq-contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@aliyevler-huquq.az
+            </div>
+            <div class="faq-contact-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Nizami küçəsi 90, Bakı AZ1000
+            </div>
+          </div>
+          <a href="#cta" class="btn-primary" style="display:inline-flex;width:100%;justify-content:center;">
+            Məsləhət Götür
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-inner reveal">
+      <div class="section-eyebrow" style="justify-content:center;margin-bottom:var(--space-lg)">Hüquqi Dəstək</div>
+      <h2 class="cta-title">
+        Hüquqlarınızı<br>
+        <em>indi</em> qoruyun
+      </h2>
+      <p class="cta-sub">
+        Hər gün keçirdiyiniz hüquqi risklər böyüyür. İlk addımı atın — pulsuz məsləhət üçün əlaqə saxlayın.
+      </p>
+      <div class="cta-actions">
+        <a href="tel:+994124985500" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 6 6l.75-.75a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Zəng Et
+        </a>
+        <a href="mailto:info@aliyevler-huquq.az" class="btn-ghost" style="color:rgba(245,240,232,0.6)">
+          E-poçt Göndər
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">Əliyevlər Hüquq Bürosu</div>
+          <div class="footer-brand-sub">Hüquq Bürosu</div>
+          <p class="footer-brand-desc">
+            1994-cü ildən Azərbaycanda hüquqi xidmətlər sahəsinin ən etibarlı adı. Hər məsələdə, hər addımda yanınızdayıq.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Xidmətlər</div>
+          <ul class="footer-links">
+            <li><a href="#xidmetler">Korporativ Hüquq</a></li>
+            <li><a href="#xidmetler">Mülki Mübahisələr</a></li>
+            <li><a href="#xidmetler">Əmlak Hüququ</a></li>
+            <li><a href="#xidmetler">Cinayət Müdafiəsi</a></li>
+            <li><a href="#xidmetler">Beynəlxalq Hüquq</a></li>
+            <li><a href="#xidmetler">Əmək Hüququ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Büro</div>
+          <ul class="footer-links">
+            <li><a href="#haqqimizda">Haqqımızda</a></li>
+            <li><a href="#komanda">Komanda</a></li>
+            <li><a href="#reyler">Müştəri Rəyləri</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#cta">Əlaqə</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Əlaqə</div>
+          <ul class="footer-links">
+            <li><a href="tel:+994124985500">+994 12 498 55 00</a></li>
+            <li><a href="mailto:info@aliyevler-huquq.az">info@aliyevler-huquq.az</a></li>
+            <li><a href="#">Nizami küç. 90, Bakı</a></li>
+            <li style="color:rgba(255,255,255,0.25);font-size:12px;margin-top:8px;">B.e–Cümə: 09:00–18:00</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2024 Əliyevlər Hüquq Bürosu. Bütün hüquqlar qorunur.</div>
+        <div class="footer-legal">
+          <a href="#">Məxfilik Siyasəti</a>
+          <a href="#">İstifadə Şərtləri</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script defer>
+    // NAV SCROLL
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // HAMBURGER
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    function closeMobileMenu() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    }
+
+    // SCROLL REVEAL
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => revealObserver.observe(el));
+
+    // FAQ ACCORDION
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    }
+
+    // COUNTER ANIMATION
+    function animateCounter(el, target, duration = 1800) {
+      let start = 0;
+      const increment = target / (duration / 16);
+      const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+          el.textContent = target + (el.dataset.suffix || '');
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(start) + (el.dataset.suffix || '');
+        }
+      }, 16);
+    }
+
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const nums = entry.target.querySelectorAll('.hero-stat-num');
+          nums.forEach(num => {
+            const text = num.textContent;
+            const match = text.match(/(\d+)(\+|%)?/);
+            if (match) {
+              num.dataset.suffix = match[2] || '';
+              animateCounter(num, parseInt(match[1]));
+            }
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const heroStats = document.querySelector('.hero-stats');
+    if (heroStats) statsObserver.observe(heroStats);
+  </script>
+</body>
+</html>
