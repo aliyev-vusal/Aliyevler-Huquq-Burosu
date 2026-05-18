@@ -1173,6 +1173,8 @@
       nav { padding: 0 var(--space-lg); }
       .nav-links { gap: var(--space-lg); }
       section { padding: var(--space-2xl) var(--space-lg); }
+      #olkeler, #haqqimizda, #reyler { padding: var(--space-2xl) var(--space-lg); }
+      footer { padding: var(--space-xl) var(--space-lg); }
       #hero { grid-template-columns: 1fr; }
       .hero-left { padding: 140px var(--space-lg) var(--space-xl); max-width: 100%; }
       .hero-right { display: none; }
@@ -1185,18 +1187,40 @@
       .team-grid { grid-template-columns: repeat(3, 1fr); }
       .reviews-grid { grid-template-columns: repeat(2, 1fr); }
       .faq-layout { grid-template-columns: 1fr; }
+      .faq-contact-box { position: static; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
 
     @media (max-width: 640px) {
+      nav { padding: 0 var(--space-md); }
       .nav-links { display: none; }
       .hamburger { display: flex; }
+
+      section { padding: var(--space-xl) var(--space-md); }
+      #olkeler, #haqqimizda, #reyler { padding: var(--space-xl) var(--space-md); }
+      footer { padding: var(--space-xl) var(--space-md) var(--space-lg); }
+
+      .hero-left { padding: 96px var(--space-md) var(--space-xl); }
+      .hero-actions { flex-wrap: wrap; gap: var(--space-md); }
+      .hero-actions .btn-primary { flex: 1; text-align: center; min-width: 160px; }
+      .hero-stats { gap: var(--space-md); flex-wrap: wrap; }
+      .stat-number { font-size: 32px; }
+
       .services-grid { grid-template-columns: 1fr; }
       .countries-grid { grid-template-columns: repeat(2, 1fr); }
       .team-grid { grid-template-columns: repeat(2, 1fr); }
       .reviews-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
-      #trust { gap: var(--space-lg); flex-direction: column; align-items: flex-start; padding: var(--space-lg); }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+      #trust { gap: var(--space-md); flex-direction: column; align-items: flex-start; padding: var(--space-md); }
+    }
+
+    @media (max-width: 400px) {
+      .hero-stats { flex-direction: column; gap: var(--space-md); }
+      .team-grid { grid-template-columns: 1fr; }
+      .countries-grid { grid-template-columns: 1fr 1fr; }
+      .faq-question h4 { font-size: 17px; }
     }
   </style>
 </head>
